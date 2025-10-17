@@ -1,0 +1,214 @@
+body {
+    background-color: #fff9ee;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.top-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 100px 60px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1.5rem;
+    letter-spacing: 0.07rem;
+}
+
+.header-text {
+    color: #33a3a3;
+    font-size: 24px;
+}
+
+.task-text {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 16px;
+}
+.task-text span {
+    display: none;
+}
+
+.text-input-form {
+    font-size: 26px;
+    border: 2px solid #e0e0e0;
+    padding: 1.5rem;
+    border-radius: 7px;
+    width: 400px;
+}
+.text-input-form:focus {
+    outline: none;
+    border: 2px solid #cab8d9;
+}
+
+.required-message {
+    color: red;
+}
+.deadline-input-form {
+    display: block;
+    text-align: end;
+    font-size: 20px;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.button {
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.add-button {
+    background-color: #61bfc2;
+    color: white;
+    width: 140px;
+    padding: 0.6rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: #33a3a3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.flag-button {
+    border: none;
+    font-size: 1.5rem;
+    padding: 6px;
+    background-color: #ffffff;
+}
+.deadline {
+    background-color: #def6f6;
+    border-radius: 1rem;
+    padding: 0.7rem 0.1rem;
+    width: 55px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    width: 210px;
+}
+
+.edit-button {
+    background-color: #ffffff;
+    color: #33a3a3;
+    padding: 0.6rem 1.5rem;
+    border: 1.5px solid #61bfc2;
+}
+.edit-button:hover {
+    background-color: #def6f6;
+    transform: translateY(2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.delete-button {
+    background-color: #ffffff;
+    font-weight: 600;
+    color: #ac7bdb;
+    padding: 0.6rem 1.5rem;
+    border: 1.5px solid #cab8d9;
+}
+.delete-button:hover {
+    background-color: #f3eefd;
+    transform: translateY(2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.task-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    margin: 60px auto;
+    max-width: 950px;
+    width: 90%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 350px;
+    max-width: 950px;
+}
+
+.th-wrapper {
+    background-color: #61bfc2;
+    color: #ffffff;
+}
+
+.task-wrapper {
+    background-color: #ffffff;
+    border-top: 3px solid #fff9ee;
+    border-bottom: 3px solid #fff9ee;
+    border-right: none;
+    border-left: none;
+}
+.table-task {
+    width: 75%;
+}
+
+.task {
+    padding: 20px;
+}
+
+/*編集画面*/
+.edit-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+.update-button:hover {
+    transform: translateY(2px);
+}
+
+.back {
+    font-size: 22px;
+}
+
+/*スマホ画面*/
+@media screen and (max-width: 750px) {
+    .task-text span {
+        display: block;
+    }
+
+    .text-input-form {
+        width: 65vw;
+    }
+
+    .task {
+        width: 90%;
+    }
+
+    .action-buttons {
+        gap: 0rem;
+        width: 100px;
+        padding: 0px;
+    }
+
+    .action-buttons-text {
+        display: none;
+    }
+
+    .edit-button,
+    .delete-button {
+        padding: 10px 16px;
+        border-radius: 1rem;
+    }
+}
