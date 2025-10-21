@@ -8,12 +8,12 @@ use Illuminate\Support\Facades\DB;
 
 class TodoListSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
-    public function run(): void
-    {
-        DB::table('todo_lists')->insert(
+  /**
+   * Run the database seeds.
+   */
+  public function run(): void
+  {
+    DB::table('tasks')->insert(
       [
         [
           'name' => 'テスト1',
@@ -28,5 +28,5 @@ class TodoListSeeder extends Seeder
 
       ]
     );
-    }
+  }
 }

@@ -14,7 +14,6 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             TodoListSeeder::class,
-            TodoPractice2Seeder::class
         ]);
         // \App\Models\User::factory(10)->create();
 
